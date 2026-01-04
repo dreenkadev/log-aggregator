@@ -241,7 +241,7 @@ class LogAggregator:
     def print_alert(self, alert: Alert):
         """Print alert"""
         print(f"\n{Colors.RED}{'═' * 60}")
-        print(f"  ⚠️  ALERT: {alert.pattern.upper()}")
+        print(f"  [!]  ALERT: {alert.pattern.upper()}")
         print(f"  Source: {alert.source}")
         print(f"  Count: {alert.count}")
         print(f"  {alert.message}")
